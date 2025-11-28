@@ -8,7 +8,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-URL: https://github.com/Kiaramanacasa/practica2pinguinos
+URL: https://github.com/Kiaramanacasa/practica2pinguinos, https://kiaramanacasa.github.io/practica2pinguinos/
 BugReports: https://github.com/Kiaramanacasa/practica2pinguinos/issues
 Imports: 
 Depends: 
