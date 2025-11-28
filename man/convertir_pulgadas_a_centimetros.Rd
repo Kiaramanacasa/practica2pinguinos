@@ -2,18 +2,18 @@
 % Please edit documentation in R/convertir_pulgadas_a_centimetros.R
 \name{convertir_pulgadas_a_centimetros}
 \alias{convertir_pulgadas_a_centimetros}
-\title{Convertir pulgadas a centímetros}
+\title{Convertir pulgadas a cent\u00edmetros}
 \usage{
 convertir_pulgadas_a_centimetros(pulgadas)
 }
 \arguments{
-\item{pulgadas}{Un vector numérico con las medidas en pulgadas.}
+\item{pulgadas}{Un vector num\u00e9rico con las medidas en pulgadas.}
 }
 \value{
-Un vector numérico con las medidas convertidas a centímetros.
+Un vector num\u00e9rico con las medidas convertidas a cent\u00edmetros.
 }
 \description{
-Convierte un vector de medidas de pulgadas a centímetros.
+Convierte un vector de medidas de pulgadas a cent\u00edmetros.
 }
 \examples{
 convertir_pulgadas_a_centimetros(c(10, 15, 20))

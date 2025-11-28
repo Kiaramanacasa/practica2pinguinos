@@ -2,20 +2,20 @@
 % Please edit documentation in R/calcular_indice_masa_corporal.R
 \name{calcular_indice_masa_corporal}
 \alias{calcular_indice_masa_corporal}
-\title{Calcular Índice de Masa Corporal (IMC)}
+\title{Calcular \u00edndice de Masa Corporal (IMC)}
 \usage{
 calcular_indice_masa_corporal(peso_kg, altura_cm)
 }
 \arguments{
-\item{peso_kg}{Un vector numérico con el peso en kilogramos (kg).}
+\item{peso_kg}{Un vector num\u00e9rico con el peso en kilogramos (kg).}
 
-\item{altura_cm}{Un vector numérico con la altura en centímetros (cm).}
+\item{altura_cm}{Un vector num\u00e9rico con la altura en cent\u00edmetros (cm).}
 }
 \value{
-Un vector numérico con el valor del IMC.
+Un vector num\u00e9rico con el valor del IMC.
 }
 \description{
-Calcula el IMC utilizando peso en kilogramos y altura en centímetros.
+Calcula el IMC utilizando peso en kilogramos y altura en cent\u00edmetros.
 }
 \examples{
 calcular_indice_masa_corporal(3.5, 40)
