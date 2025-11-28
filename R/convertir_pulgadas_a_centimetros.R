@@ -1,23 +1,21 @@
-#' Convertir pulgadas a cent\u00edmetros
+#' Convertir pulgadas a centimetros
 #'
-#' Convierte un vector de medidas de pulgadas a cent\u00edmetros.
+#' Esta funcion convierte un valor numerico en pulgadas a centimetros.
 #'
-#' @param pulgadas Un vector num\u00e9rico con las medidas en pulgadas.
-#' @return Un vector num\u00e9rico con las medidas convertidas a cent\u00edmetros.
-#' @export
+#' @param pulgadas Valor numerico en pulgadas.
+#'
+#' @return Valor numerico convertido a centimetros.
 #'
 #' @examples
-#' convertir_pulgadas_a_centimetros(c(10, 15, 20))
+#' convertir_pulgadas_a_centimetros(10)
+#'
+#' @export
 convertir_pulgadas_a_centimetros <- function(pulgadas) {
-  # Programaci\u00f3n Defensiva: Usando cli::cli_abort()
+
   if (!is.numeric(pulgadas)) {
-    cli::cli_abort(
-      "{.var pulgadas} debe ser un vector num\u00e9rico."
-    )
+    stop("El valor ingresado no es un numero.")
   }
 
-  # Realizar la conversi\u00f3n
-  centimetros <- pulgadas * 2.54
-
-  return(centimetros)
+  pulgadas * 2.54
 }
+

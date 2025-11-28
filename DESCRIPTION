@@ -11,14 +11,13 @@ RoxygenNote: 7.3.3
 URL: https://github.com/Kiaramanacasa/practica2pinguinos
 BugReports: https://github.com/Kiaramanacasa/practica2pinguinos/issues
 Imports: 
-    cli
 Depends: 
     R (>= 3.5)
 LazyData: true
 Suggests: 
     dplyr,
     ggplot2,
-    readr
+    readr,
     knitr,
     rmarkdown,
     testthat (>= 3.0.0)
