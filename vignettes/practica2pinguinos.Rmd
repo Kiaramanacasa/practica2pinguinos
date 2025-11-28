@@ -1,0 +1,39 @@
+---
+title: "practica2pinguinos"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{practica2pinguinos}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(practica2pinguinos)
+```
+## Introducción
+
+Bienvenidos a la viñeta del paquete `practica2pinguinos`.  
+Aquí mostramos cómo usar los datos incluidos en el paquete (`pinguinos_demo`)  
+y las funciones de conversión y cálculo de IMC.
+
+---
+
+## Dataset incluido: `pinguinos_demo`
+
+Este paquete incluye un conjunto de datos pequeño, pensado para ejemplos.
+
+```{r}
+pinguinos_demo
+convertir_pulgadas_a_centimetros(10)
+
+convertir_pulgadas_a_centimetros(15)
+ calcular_indice_masa_corporal(3.5, 0.40)
+
+ 
