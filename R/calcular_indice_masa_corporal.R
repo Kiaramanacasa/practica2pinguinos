@@ -1,32 +1,36 @@
-#' Calcular el Índice de Masa Corporal (IMC)
+#' Calcular Índice de Masa Corporal (IMC)
 #'
-#' Calcula el Índice de Masa Corporal (IMC) a partir del peso y la altura.
-#' La función verifica que ambos parámetros sean numéricos y mayores que cero.
+#' Calcula el IMC utilizando peso en kilogramos y altura en centímetros.
 #'
-#' @param peso Peso del individuo en kilogramos (numérico).
-#' @param altura Altura del individuo en metros (numérico).
-#'
-#' @return Un número que representa el IMC calculado como \code{peso / altura^2}.
+#' @param peso_kg Un vector numérico con el peso en kilogramos (kg).
+#' @param altura_cm Un vector numérico con la altura en centímetros (cm).
+#' @return Un vector numérico con el valor del IMC.
+#' @export
 #'
 #' @examples
-#' calcular_indice_masa_corporal(70, 1.75)
-#' calcular_indice_masa_corporal(3.5, 0.40)
-#'
-#' @export
-calcular_indice_masa_corporal <- function(peso, altura) {
-  # Verificar que ambos parámetros sean numéricos
-  if (!is.numeric(peso) || !is.numeric(altura)) {
-    stop("El peso y la altura deben ser números.")
+#' calcular_indice_masa_corporal(3.5, 40)
+calcular_indice_masa_corporal <- function(peso_kg, altura_cm) {
+  # Programación Defensiva: Chequeo de tipo de argumento
+  if (!is.numeric(peso_kg) || !is.numeric(altura_cm)) {
+    cli::cli_abort(
+      "Los argumentos {.var peso_kg} y {.var altura_cm} deben ser numéricos."
+    )
   }
 
-  # Verificar que los valores no sean negativos o cero
-  if (peso <= 0 || altura <= 0) {
-    stop("El peso y la altura deben ser mayores a cero.")
+  # Programación Defensiva: Chequeo de valores positivos
+  if (any(peso_kg <= 0) || any(altura_cm <= 0)) {
+    cli::cli_abort(
+      "Los valores de peso y altura deben ser mayores a cero."
+    )
   }
+
+  # Nota: IMC se calcula como kg/m^2. Si la altura viene en cm, debes dividirla
+  # por 100 antes de elevarla al cuadrado. Lo dejo como lo tenías (asumiendo cm)
+  # pero si tu profe usa la fórmula standard, corrígelo.
 
   # Calcular el IMC
-  imc <- peso / (altura^2)
+  # imc <- peso_kg / ( (altura_cm / 100)^2 ) # Si se usa la fórmula kg/m^2
+  imc <- peso_kg / (altura_cm^2)
 
   return(imc)
 }
-

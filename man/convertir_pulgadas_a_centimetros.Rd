@@ -7,17 +7,14 @@
 convertir_pulgadas_a_centimetros(pulgadas)
 }
 \arguments{
-\item{pulgadas}{Valor numérico que representa la longitud en pulgadas.}
+\item{pulgadas}{Un vector numérico con las medidas en pulgadas.}
 }
 \value{
-Un número que indica la longitud convertida a centímetros.
+Un vector numérico con las medidas convertidas a centímetros.
 }
 \description{
-Convierte una medida expresada en pulgadas a su equivalente en centímetros.
-La función valida que el argumento de entrada sea numérico.
+Convierte un vector de medidas de pulgadas a centímetros.
 }
 \examples{
-convertir_pulgadas_a_centimetros(10)
-convertir_pulgadas_a_centimetros(2.5)
-
+convertir_pulgadas_a_centimetros(c(10, 15, 20))
 }

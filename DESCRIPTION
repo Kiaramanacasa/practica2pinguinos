@@ -12,6 +12,7 @@ RoxygenNote: 7.3.3
 URL: https://github.com/Kiaramanacasa/practica2pinguinos
 BugReports: https://github.com/Kiaramanacasa/practica2pinguinos/issues
 Imports: 
+    cli,
     dplyr,
     ggplot2,
     readr
