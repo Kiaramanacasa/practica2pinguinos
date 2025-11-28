@@ -8,6 +8,8 @@
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/Kiaramanacasa/practica2pinguinos/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Kiaramanacasa/practica2pinguinos/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/Kiaramanacasa/practica2pinguinos/graph/badge.svg)](https://app.codecov.io/gh/Kiaramanacasa/practica2pinguinos)
 <!-- badges: end -->
 
 The goal of practica2pinguinos is to …
