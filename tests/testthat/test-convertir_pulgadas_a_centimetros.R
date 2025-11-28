@@ -6,10 +6,8 @@ test_that("convertir_pulgadas_a_centimetros funciona y es defensiva", {
   expect_equal(convertir_pulgadas_a_centimetros(c(10, 20)), c(25.4, 50.8))
 
   # 3. Prueba de programaci\u00f3n defensiva: lanza error si no es num\u00e9rico.
-  # El mensaje debe coincidir con el que lanzamos sin tilde (numericos).
   expect_error(
     convertir_pulgadas_a_centimetros("texto"),
-    # Cambia el mensaje aqu\u00ed para que coincida con el error real
-    "El valor ingresado no es un numero."
+    "El valor ingresado no es un numero." # ¡Usa esta cadena exacta!
   )
 })
